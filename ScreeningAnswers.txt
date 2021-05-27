@@ -1,0 +1,90 @@
+1.
+
+list = []
+num = int(input("Enter number of elements in list: "))
+
+# iterating till num to append elements in list
+for i in range(1, num + 1):
+    elements = int(input("Enter elements: "))
+    list.append(elements)
+      
+# print maximum element
+print("Largest element is:", max(list))
+
+
+2.
+def Range(list): 
+    largest = list1[0] 
+    largest2 = None
+    for item in list1[1:]:     
+        if item > largest: 
+            largest2 = largest
+            largest = item 
+        else:
+	    largest2 == None or largest2 < item: 
+            largest2 = item 
+        
+              
+    print("Largest element is:", largest) 
+    print("Second Largest element is:", largest2) 
+
+list = [12, 45, 2, 41, 31, 10, 8, 6, 4]
+Range(list) 
+
+
+
+6.
+s = "The quick brown fox jumps over the little lazy dog"
+
+def checkPangram(s ):
+    List = []
+    # create list of 26 charecters and set false each entry
+    for i in range(26):
+        List.append(False)
+          
+    # converting the sentence to lowercase and iterating
+    
+    for c in s.lower(): 
+        if not c == " ":
+  
+            # make the corresponding entry True
+            List[ord(c) -ord('a')]= True 
+              
+    # check if any charecter is missing then return False
+    for ch in List:
+        if ch == False:
+            return False
+    return True
+
+3.
+def find_max( list ):
+    max = list[ 0 ]
+    for a in list:
+        if a > max:
+            max = a
+    return max
+ 
+ 
+num = int(input('How many numbers: '))
+ 
+lst = []
+ 
+for n in range(num):
+    numbers = int(input('Enter number '))
+    lst.append(numbers)
+     
+print("Maximum element in the list is :", find_max(lst))
+
+4.
+Check wheather number is greater than 1,if not than the number is prime.
+check wheather the number is evenly divided by any number from 2 to half of the number.
+No prime number greater than 5 ends in a 5. Any number greater than 5 that ends in a 5 can be divided by 5.
+
+5.
+s = 'String'
+def fname(s)
+	with open('myfile.txt') as myfile:
+     		if 'String' in myfile.read():
+            		print('String is found in file')
+          	else:
+	    		print('Not found')
