@@ -1,0 +1,13 @@
+import math
+
+def isprime(n):
+    if n%2 == 0 or n%3 == 0 or n%5==0:
+        return False
+    for i in range(7, math.floor(math.sqrt(n)), 2):
+        if n%i == 0:
+            return False
+    return True
+
+Check wheather number is greater than 1,if not than the number is prime.
+check wheather the number is evenly divided by any number from 2 to half of the number.
+No prime number greater than 5 ends in a 5. Any number greater than 5 that ends in a 5 can be divided by 5.
